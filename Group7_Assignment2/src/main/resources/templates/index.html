@@ -2,33 +2,33 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>Group Page</title>
+<title>Group 7</title>
 <style>
 .image-container {
-	display: flex; /* Align items in a row */
-	justify-content: center; /* Center items on the main axis */
-	flex-wrap: wrap; /* Allow items to wrap as needed */
+	display: flex; 
+	justify-content: center; 
+	flex-wrap: wrap; 
 }
 
 .image-container div {
-	margin: 0 10px; /* Add horizontal spacing between images */
+	margin: 0 20px; 
+	margin-top: 50px;
+	max-width: 800px;
 }
 
 .text-container {
-	text-align: justify; /* Center-align the text */
-	margin-top: 20px; /* Add some space above the text */
-	margin-left: auto; /* Add left margin */
-	margin-right: auto; /* Add right margin */
-	max-width: 800px;
-	/* Maximum width to align with the image container */
+	text-align: justify; 
+	margin-top: 50px; 
+	margin-left: auto; 
+	margin-right: auto; 
+	max-width: 800px; 
 }
 </style>
 </head>
 <body>
 
 	<div class="image-container">
-		<div th:each="imageName : ${groupProfile.imageNames}">
-			<!-- Updated th:src to properly handle the imageName variable -->
+		<div th:each="imageName : ${groupProfile.imageNames}">			
 			<img th:src="@{'/images/' + ${imageName}}" alt="Image" />
 		</div>
 	</div>
