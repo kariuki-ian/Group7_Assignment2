@@ -26,16 +26,14 @@ public class GroupController {
 	
 	
 	  @GetMapping("/bio/{imageName}")
-	  public String imageDetails(@PathVariable String imageName, Model model) {
-		  
+	  public String imageDetails(@PathVariable String imageName, Model model) {		  
 		  switch(imageName){
 		  case "Ian":
 			  Model_ika_09 std = new Model_ika_09();
 			    model.addAttribute("member",std);
 			    break; 
 		  }
-		
-          
+
 	    return "bio/" + imageName;
 	  }
 	
