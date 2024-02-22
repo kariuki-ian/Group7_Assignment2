@@ -32,13 +32,7 @@ public class GroupController {
 		  case "Ian":
 			  Model_ika_09 std = new Model_ika_09();
 			    model.addAttribute("member",std);
-			    break;
-		  case "Pan.png":
-			  Model_ika_09 std1 = new Model_ika_09();
-			    model.addAttribute("member",std1);
-			    break;
-			  
-		  
+			    break; 
 		  }
 		
           
